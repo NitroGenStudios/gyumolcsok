@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="data_fruits.js"></script>
+	<script src="js2.js"></script>
+</head>
+<body>
+	
+	<img src="img/bg.jpg" class="absolute -z-50 w-screen h-screen opacity-50 bg-center bg-cover">
+
+	<div class="relative flex flex-col items-center w-screen">
+		<h1 class="text-[5vw] shadow-xl rounded-md p-2 mb-3">Déli gyümölcsök</h1>
+		<p>Melyik a kedvenced?</p>
+
+		<select onselect="selectaaa(this)" name="gyumolcs" id="gyumolcs" class="w-[20vw] p-1 mt-1 shadow-xl bg-gray-800 text-slate-50 opacity-80 text-center rounded-md">
+			<option value="0">válassz...</option>
+
+		</select>
+
+		<div class="w-[50%] h-[200px] overflow-hidden bg-slate-50 mt-5 rounded-md shadow-xl">
+			<img src="img/citrom.jpg" id="gyumolcskep" class="w-[50%] float-left">
+			
+			<div class="float-right w-[50%]">
+				<h2 class="" id="title">Cím</h2>
+				<p class="" id="description">Szöveg lorem ipsum valami.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js.js"></script>
+	
+</body>
+</html>
